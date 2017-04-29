@@ -1,0 +1,47 @@
+Secure Instant Messaging running TCP sockets
+
+VERSION=python 2.7.12
+
+AUTHOR: Nitesh Nagaraj
+        Naveen Yanamaddi
+
+QUICKSTART:
+
+Before running the application, make sure you have the following file in directory
+
+Server Public Key - server_public_key.der
+Server Private Key - server_private_key.der
+PasswordDB.txt
+Config.conf
+
+For registering the new user, Please use the following script and options
+
+python generatePassword.py username password
+
+Registered Username and Passwords:
+
+naveen - naveen
+nithesh - nithesh
+aaa - aaa
+bbb - bbb
+ccc - ccc
+abc - abc
+
+Server:
+    python server.py -sp <port>
+
+Client:
+    python client.py
+
+
+Documentation:
+
+Client:
+
+Sample Usage of Commands
+    +> Prompt for userName and password
+    +> list -> Requests list of signed in users at server
+    <– Signed In Users: User1, User2 -> Displays list of signed in users
+    +> send User1 Hello this is User1. Sends User1 "Hello this is User1”
+    <– <From IP:PORT:User1>: Hello this is User1
+    +>
