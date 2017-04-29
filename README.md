@@ -60,3 +60,10 @@ Services provided by application:
 3. Protection against weak passwords with hashing and salting
 4. End-point hiding
 5. Protection against Denial of Service (DoS) attacks
+
+
+Main Contributors
+
+Naveen Yanamaddi
+Nithesh Nagaraj
+
